@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #0d1b2a; 
+      color: #ffffff; 
+      scroll-behavior: smooth;
+      font-size: 18px; /* Base text size bigger */
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 80px;
+      background: #1b263b; 
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    }
+    header h1 {
+      font-size: 26px; /* Bigger name */
+      font-weight: 600;
+      color: #ffffff;
+    }
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 18px; /* Bigger nav links */
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #000000; 
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 90vh;
+      padding: 0 80px;
+    }
+    .intro {
+      max-width: 500px;
+    }
+    .intro h2 {
+      font-size: 50px; /* Larger intro headline */
+      font-weight: 700;
+      margin: 0;
+      color: #ffffff;
+    }
+    .intro h3 {
+      font-size: 22px; /* Bigger subtitle */
+      font-weight: 500;
+      margin: 10px 0;
+      color: #dce4f2;
+    }
+    .intro p {
+      margin: 15px 0 30px;
+      color: #f5f5f5;
+      line-height: 1.8;
+      font-size: 18px;
+    }
+
+    .profile img {
+      width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.6);
+      border: 3px solid #000000;
+      transition: transform 0.6s ease, border 0.3s ease;
+    }
+    .profile img:hover {
+      transform: scale(1.05);
+      border: 3px solid #ffffff;
+    }
+
+    .socials-left {
+      position: fixed;
+      top: 50%;
+      left: 30px;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      font-size: 26px; /* Bigger icons */
+      z-index: 1000;
+    }
+    .socials-left a {
+      color: #ffffff;
+      transition: 0.3s;
+    }
+    .socials-left a:hover {
+      color: #000000; 
+      transform: scale(1.2);
+    }
+
+    section {
+      padding: 80px 80px;
+      min-height: 70vh;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+      font-size: 20px; /* Bigger base text for all sections */
+    }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    h2.section-title {
+      font-size: 32px; /* Larger section titles */
+      margin-bottom: 20px;
+      color: #ffffff;
+      border-bottom: 2px solid #000000; 
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    ul li {
+      margin-bottom: 12px;
+      color: #ffffff;
+      font-size: 20px; /* Larger list items */
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #1b263b;
+      color: #ffffff;
+      font-size: 16px; /* Slightly larger footer */
+      border-top: 2px solid #000000; 
+    }
+  </style>
+</head>
+<body>
+
+
+  
+  <header>
+    <h1>Antonio Emmanuel Serquillos</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  
+  <div class="socials-left">
+    <a href="https://www.instagram.com/dos444_/profilecard/?igsh=MWhiNDN2ZXV6Z2ZlNA==" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/share/1Ab9YySXnS/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="mailto:serquillosanton@gmail.com"><i class="fas fa-envelope"></i></a>
+  </div>
+
+  
+  <section id="home" class="container">
+    <div class="intro">
+      <h2>Hello I'm <strong>Anton</strong> 👋</h2>
+      <h3>Student | Graphic Designer</h3>
+      <p>Bachelor of Science in Information Technology.</p>
+    </div>
+    <div class="profile">
+      <img src="add.png" alt="Profile Photo">
+    </div>
+  </section>
+
+  
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p>I am a BSIT student with basic knowledge in computers and technology. I’ve learned programming, networking, and web development. My goal is to improve my skills and gain more experience in the IT field.</p>
+  </section>
+
+  
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <ul>
+      <li>Web</li>
+      <li>Spreadsheet</li>
+      <li>MS Office</li>
+    </ul>
+  </section>
+
+  
+  <section id="education">
+    <h2 class="section-title">Education</h2>
+    <p>Bachelor of Science in Information Technology (2022-2026)</p>
+  </section>
+
+  
+  <section id="certificates">
+    <h2 class="section-title">Certificates</h2>
+    <ul>
+      <li>1st Place Warbot in Robotics</li>
+      <li>Programmers Guild Certificate</li>
+      <li>Graphic Design Certificate</li>
+    </ul>
+  </section>
+
+  
+  <section id="hobbies">
+    <h2 class="section-title">Hobbies</h2>
+    <ul>
+      <li>Editing</li>
+      <li>Drawing</li>
+      <li>Playing Basketball</li>
+      <li>Traveling</li>
+    </ul>
+  </section>
+
+  
+  <section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <p><strong>Location:</strong> Brgy. E. Lopez, Silay City, Negros Occidental, Philippines</p>
+    <p><strong>Contact Number:</strong> +63 963 218 6358</p>
+  </section>
+
+  
+  <footer>
+    <p>© 2025 My Portfolio | All Rights Reserved</p>
+  </footer>
+
+  
+  <script>
+    const sections = document.querySelectorAll("section");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.2 });
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+
+</body>
+</html>
